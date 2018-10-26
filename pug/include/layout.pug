@@ -1,0 +1,68 @@
+doctype html
+html
+    head
+        include head
+        // own style
+        block own_style
+            link(rel = 'stylesheet', href = '')
+    body
+        //loading
+        .loading(style="display:none")
+            .loading-text
+                span.loading-text-words L
+                |             
+                span.loading-text-words O
+                |             
+                span.loading-text-words A
+                |             
+                span.loading-text-words D
+                |             
+                span.loading-text-words I
+                |             
+                span.loading-text-words N
+                |             
+                span.loading-text-words G
+        //trans
+        block trans
+            include trans
+            // header
+        header
+            // bur
+            block bur
+                include bur
+            // M Menu
+            include menubox
+            // PC menu 
+            block menu
+                nav.pc
+                    ul
+                        block nav-index
+                            li
+                                block home
+                                    a(href="index.html") home
+                        li
+                            block about
+                                a(href="#") about
+                        li
+                            block work
+                                a(href="work.html") work
+        // about
+        include about
+        // content
+        .frame
+            .top.abs
+            .btm.abs
+            .left.abs
+            .right.abs
+        .wrap
+            block content
+        block footer
+            footer
+                .contactBox.por
+                    .contact
+                        p say hello?
+                        .box
+                            a(href="tel:+886928135451").tel +886-928-135-451
+                            a(href="mailto:yehcyamm@gmail.com").mail yehcyamm@gmail.com
+
+
