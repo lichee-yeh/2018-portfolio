@@ -1,32 +1,4 @@
 .eva-fool {
-    .introBox {
-        flex-direction: column;
-        @include pc-1440 {
-            margin-top: 20vh;
-        }
-        @include pc-1440 {
-            width: 70%;
-        }
-        @include m-767 {
-            margin-top: 15vh;
-        }
-    }
-    .right {
-        @include pc-w {
-            display: flex;
-            justify-content: space-between;
-            width: 100%;
-            margin-top: 10vh;
-        }
-        @include m-767 {
-            margin-bottom: 0;
-        }
-    }
-    .intro {
-        @include pc-w {
-            width: 45%;
-        }
-    }
     .banner {
         text-align: center;
         width: 1080px;
@@ -113,11 +85,10 @@
     .post {
         text-align: center;
         margin: auto;
-        margin-bottom: 10vh;
+        margin-bottom: 15vh;
         width: 600px;
-        height: 800px;
         @include m-767 {
-            width: 75%;
+            display: none;
         }
     }
 }

@@ -3,15 +3,24 @@ include ./include/mixin
 block own_style
     link(rel = 'stylesheet', href = 'css/project.css')
 block afterBody
-
+    #fb-root
+    script.
+        (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2';
+        fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
 block content
     +scroll
-    main.por.eva-fool
+    main.por.eva-fool.banner-info
         section.introBox
             .left
                 h3 
                     span.break 長榮航空
-                    span.break 機場地勤才藝班
+                        span.break-m 粉絲專業 
+                    span.break 愚人節貼文
                 a(href="https://www.facebook.com/evaairwayscorp.tw/posts/770880023059183" target='_blank') 
                     span VIEW WEBSITE
                     span.arrow
@@ -27,7 +36,7 @@ block content
                     ul
                         li
                             span Project
-                            span 長榮航空 機場地勤才藝班
+                            span 粉絲專業愚人節貼文
                         li
                             span Client
                             span EVA AIR
@@ -50,26 +59,25 @@ block content
                 li
                     +jpg('eva-fool4')
             .report
-                a(href="http://yahoo-emarketing.tumblr.com/post/159257615841/41afd" target="_blank").news
+                a(href="http://yahoo-emarketing.tumblr.com/post/159257615841/41afd").news 
                     +png('eva-fool-report1')
                 p YAHOO!奇摩 網路行銷：
-                    a(href="http://yahoo-emarketing.tumblr.com/post/159257615841/41afd" target="_blank") http://yahoo-emarketing.tumblr.com/post/159257615841/41afd
+                    a(href="http://yahoo-emarketing.tumblr.com/post/159257615841/41afd") http://yahoo-emarketing.tumblr.com/post/159257615841/41afd
             .report
-                a(href="http://news.tvbs.com.tw/life/717580" target="_blank").news
+                a(href="http://news.tvbs.com.tw/life/717580").news 
                     +png('eva-fool-report4')
                 p TVBS新聞網：
-                    a(href="http://news.tvbs.com.tw/life/717580" target="_blank") http://news.tvbs.com.tw/life/717580
+                    a(href="http://news.tvbs.com.tw/life/717580") http://news.tvbs.com.tw/life/717580
             .report
-                a(href="http://www.cna.com.tw/news/firstnews/201704015009.aspx" target="_blank").news
+                a(href="http://www.chinatimes.com/realtimenews/20170401001233-260415").news 
                     +png('eva-fool-report2')
-                p 中央通訊社：
-                    a(href="http://www.cna.com.tw/news/firstnews/201704015009.aspx" target="_blank") http://www.cna.com.tw/news/firstnews/201704015009.aspx
-
-            .report
-                a(href="http://www.chinatimes.com/realtimenews/20170401001233-260415" target="_blank").news
-                    +png('eva-fool-report3')
                 p 中時電子報：
-                    a(href="http://www.chinatimes.com/realtimenews/20170401001233-260415" target="_blank") http://www.chinatimes.com/realtimenews/20170401001233-260415
+                    a(href="http://www.chinatimes.com/realtimenews/20170401001233-260415") http://www.chinatimes.com/realtimenews/20170401001233-260415
+            .report
+                a(href="http://www.cna.com.tw/news/firstnews/201704015009.aspx").news 
+                    +png('eva-fool-report3')
+                p YAHOO!奇摩 網路行銷：
+                    a(href="http://www.cna.com.tw/news/firstnews/201704015009.aspx") http://www.cna.com.tw/news/firstnews/201704015009.aspx
         .post
-            <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fevaairwayscorp.tw%2Fposts%2F770880023059183&width=500" width="100%" height="700"style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
-        +switchBox('tiger','#')
+            <div class="fb-post" data-href="https://www.facebook.com/evaairwayscorp.tw/posts/770880023059183" data-show-text="true"><blockquote cite="https://www.facebook.com/evaairwayscorp.tw/posts/770880023059183" class="fb-xfbml-parse-ignore"><p>【機場地勤才藝班...</p>Posted by <a href="https://www.facebook.com/evaairwayscorp.tw/">EVA Airways Corp. 長榮航空</a> on&nbsp;<a href="https://www.facebook.com/evaairwayscorp.tw/posts/770880023059183">Friday, March 31, 2017</a></blockquote></div>
+        +switchBox('eva-wifi','one-more')

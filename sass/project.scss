@@ -556,6 +556,43 @@ section {
     }
 }
 
+.banner-info {
+    .introBox {
+        flex-direction: column;
+        @include pc-1440 {
+            margin-top: 20vh;
+        }
+        @include pc-1440 {
+            width: 70%;
+        }
+        @include m-767 {
+            margin-top: 15vh;
+        }
+    }
+    .left,
+    .right {
+        @include pc-w {
+            width: 100%;
+        }
+    }
+    .right {
+        @include pc-w {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            margin-top: 10vh;
+        }
+        @include m-767 {
+            margin-bottom: 0;
+        }
+    }
+    .intro {
+        @include pc-w {
+            width: 45%;
+        }
+    }
+}
+
 @import "onemore";
 @import "coke";
 @import "sprite";
@@ -564,3 +601,6 @@ section {
 @import "eva";
 @import "wild";
 @import "eva-fool";
+@import "eva-wifi";
+@import "house";
+@import "google";

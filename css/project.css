@@ -947,6 +947,63 @@ section {
   }
 }
 
+.banner-info .introBox {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 1440px) {
+  .banner-info .introBox {
+    margin-top: 20vh;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .banner-info .introBox {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .banner-info .introBox {
+    margin-top: 15vh;
+  }
+}
+
+@media screen and (min-width: 767px) {
+  .banner-info .left,
+  .banner-info .right {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 767px) {
+  .banner-info .right {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 10vh;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .banner-info .right {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 767px) {
+  .banner-info .intro {
+    width: 45%;
+  }
+}
+
 .kv-om {
   background: url(../img/om_kv.jpg) no-repeat center/cover;
 }
@@ -1692,6 +1749,10 @@ section {
   }
 }
 
+.tiger .box {
+  text-align: center;
+}
+
 .tiger .box ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1816,6 +1877,13 @@ section {
   }
 }
 
+@media screen and (max-width: 413px) {
+  .kids-typo {
+    width: 225px;
+    margin-top: 0;
+  }
+}
+
 .kids .cir1 {
   background: #cd2c5d;
 }
@@ -1909,6 +1977,12 @@ section {
   }
 }
 
+@media screen and (max-width: 767px) {
+  .kids .layout .pageBoxOverlap {
+    width: 74%;
+  }
+}
+
 .kv-eva {
   background: url(../img/eva_kv.jpg) no-repeat bottom center/cover;
 }
@@ -1992,56 +2066,6 @@ section {
   color: #a0a0a0;
   font-weight: 700;
   letter-spacing: 1px;
-}
-
-.eva-fool .introBox {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
-@media screen and (max-width: 1440px) {
-  .eva-fool .introBox {
-    margin-top: 20vh;
-  }
-}
-
-@media screen and (max-width: 1440px) {
-  .eva-fool .introBox {
-    width: 70%;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .eva-fool .introBox {
-    margin-top: 15vh;
-  }
-}
-
-@media screen and (min-width: 767px) {
-  .eva-fool .right {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    width: 100%;
-    margin-top: 10vh;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .eva-fool .right {
-    margin-bottom: 0;
-  }
-}
-
-@media screen and (min-width: 767px) {
-  .eva-fool .intro {
-    width: 45%;
-  }
 }
 
 .eva-fool .banner {
@@ -2162,14 +2186,117 @@ section {
 .eva-fool .post {
   text-align: center;
   margin: auto;
-  margin-bottom: 10vh;
+  margin-bottom: 15vh;
   width: 600px;
-  height: 800px;
 }
 
 @media screen and (max-width: 767px) {
   .eva-fool .post {
-    width: 75%;
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1441px) {
+  .eva-wifi .introBox {
+    width: 55%;
+  }
+}
+
+.eva-wifi .post {
+  width: 55%;
+  background: #fff;
+  margin: -5vh auto 10vh;
+}
+
+@media screen and (max-width: 1440px) {
+  .eva-wifi .post {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .eva-wifi .post {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .eva-wifi .post {
+    width: 74%;
+    margin: 0 auto 10vh;
+  }
+}
+
+.kv-house {
+  background: #373737;
+}
+
+.house .cir1 {
+  background: #000;
+}
+
+.house .cir2 {
+  background: #6f6f6f;
+}
+
+.house .cir3 {
+  background: #dab896;
+}
+
+.google li {
+  display: block;
+}
+
+.google .bn {
+  width: 338px;
+  margin: -5vh auto 10vh;
+}
+
+@media screen and (max-width: 767px) {
+  .google .bn {
+    margin: 5vh auto 8vh;
+  }
+}
+
+@media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
+  .google .bn {
+    margin: -2vh auto 8vh;
+  }
+}
+
+.google .yt {
+  width: 55%;
+  margin: 0 auto 8vh;
+}
+
+@media screen and (max-width: 767px) {
+  .google .yt {
+    margin: 0 auto 10vh;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .google .bn,
+  .google .yt {
+    width: 74%;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .break-bn {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .break-bn {
+    display: inline;
+  }
+}
+
+@media screen and (max-width: 374px) {
+  .break-bn {
+    display: block;
   }
 }
 

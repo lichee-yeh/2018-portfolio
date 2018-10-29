@@ -12,6 +12,10 @@
         width: 236px;
         margin-top: 0;
     }
+    @include m-413 {
+        width: 225px;
+        margin-top: 0;
+    }
 }
 
 .kids {
@@ -77,6 +81,11 @@
                 width: 100%;
                 max-width: 100%;
             }
+        }
+    }
+    .layout .pageBoxOverlap {
+        @include m-767 {
+            width: 74%;
         }
     }
 }
