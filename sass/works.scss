@@ -24,7 +24,6 @@
         @include m-767 {
             border-top: 1px solid #a0a0a0;
         }
-        ;
     }
     .content {
         width: 80%;
@@ -43,25 +42,6 @@
             width: 76%;
             margin-bottom: 80px;
         }
-    }
-}
-
-.content {
-    width: 80%;
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    @include pc-1366 {
-        width: 85%;
-    }
-    @include pc-1280 {
-        width: 75%;
-    }
-    @include m-767 {
-        border-top: 1px solid $l-gray;
-        width: 76%;
-        margin-bottom: 80px;
     }
 }
 
