@@ -29,14 +29,14 @@
         @include pc-1366 {
             max-width: 450px;
         }
-        @include m-1024 {
-            width: 30%;
-            top: 42%;
-        }
         @include pc-w {
             position: fixed;
             top: 50%;
             transform: translateY(-50%);
+        }
+        @include m-1024 {
+            width: 30%;
+            top: 42%;
         }
         @include m-767 {
             width: 100%;

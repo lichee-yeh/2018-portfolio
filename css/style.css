@@ -878,16 +878,16 @@ li {
     @media screen and (max-width: 1366px) {
       .about .pic {
         max-width: 450px; } }
-    @media screen and (max-width: 1024px) {
-      .about .pic {
-        width: 30%;
-        top: 42%; } }
     @media screen and (min-width: 767px) {
       .about .pic {
         position: fixed;
         top: 50%;
         -webkit-transform: translateY(-50%);
         transform: translateY(-50%); } }
+    @media screen and (max-width: 1024px) {
+      .about .pic {
+        width: 30%;
+        top: 42%; } }
     @media screen and (max-width: 767px) {
       .about .pic {
         width: 100%; } }
