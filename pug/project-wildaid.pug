@@ -4,33 +4,33 @@ block own_style
     link(rel = 'stylesheet', href = 'css/project.css')
 block content
     +scroll
-    main.por.kids
-        .kv.kv-kids
-        .device.laptop
-            +png('kids')
+    main.por.wild
+        .kv.kv-wild
+        .device.mac
+            +png('wild')
         section.introBox
             .left
                 h3 
-                    span.break 弱勢兒童
-                    span.break 長假營養資助計畫
-                a(href="https://love.children.org.tw/" target='_blank') 
+                    span.break 無翅宣言官方網站
+                    span.font-s (Pitch Vision)
+                a(href="https://lichee-yeh.github.io/wildaid/" target='_blank') 
                     span VIEW WEBSITE
                     span.arrow
             .right
                 .intro
                     h4 Description
                     p 
-                        span.break 兒福聯盟為協助弱勢孩子長假期間也能吃得飽、過得好，持續展開「弱勢兒童長假營養資助計畫」。本次募款計畫網站主題是『暑假的幻想』，暑假沒有辦法出去玩的孩子，那些從未體驗過的暑假生活，只能自己寫作業時憑空幻想。
-                        span.break 網站設計以學生作業本的風格為主，搭配插畫家的畫作，讓整個網站看起來活潑可愛。在捐款的流程也設計了小動態回饋，讓捐款更加有趣。
+                        span.break 全球每年有上千萬頭鯊魚被取魚翅死亡，因此WildAid推出「世界無翅宣言」連署平台，邀請各大企業和民眾一起「拒吃魚翅、愛護鯊魚」。
+                        span.break 整體設計以大圖、海洋元素組成，風格簡潔，並用微動態的波浪及泡沫點綴，吸引user在頁面上的整個體驗。
                 .intro
                     h4 Information
                     ul
                         li
                             span Project
-                            span 弱勢兒童長假營養資助計畫
+                            span 無翅宣言官方網站
                         li
                             span Client
-                            span 兒童福利聯盟
+                            span WildAid 野生救援
                         li
                             span Year
                             span 2018
@@ -40,7 +40,7 @@ block content
                                 span.break Responsive Web Design, UI Design,
                                 span.break PSD to Html
         .mockup
-            +jpg('kids_layout')
+            +jpg('wild_layout')
         section.identity
             +sub-tt('identity')
             main
@@ -48,10 +48,7 @@ block content
                     .info
                         h4 typography
                         ul.typo
-                            li.kids-typo
-                              +svg('kids_typo')  
                             li.notoSans
-                                p.gray-l 內文
                                 p 思源黑體 Noto Sans CJK TC Regular
                                 p.font-m 思源黑體 Noto Sans CJK TC Medium
                                 p.font-b 思源黑體 Noto Sans CJK TC Bold
@@ -61,31 +58,23 @@ block content
                         ul.color.kids-color
                             li
                                 .cir.cir1
-                                p #cd2c5d
+                                p #2b7cb5
                             li
                                 .cir.cir2
-                                p #585858
-                            li
-                                .cir.cir3
-                                p #f1e6d0
+                                p #8fcde1
         section.layout
             +sub-tt('layout')
             .box.onePage 
                 .page.page1
-                    +jpg('kids_layout2')
+                    +jpg('wild_layout2')
             .box.pageBoxOverlap
                 .page.page2
-                    +jpg('kids_layout3')
+                    +jpg('wild-s1')
                 .page.page3
-                    +jpg('kids_layout4')
+                    +jpg('wild-s2')
             .box.pageBoxOverlap
                 .page.page2
-                    +jpg('kids_layout5')
+                    +jpg('wild-s3')
                 .page.page3
-                    +jpg('kids_layout6')
-            .box.page-m
-                .page.page4
-                    +jpg('kids_layout7')
-                .page
-                    +jpg('kids_layout8')
-        +switchBox('eva','house')
+                    +jpg('wild-s4')
+        +switchBox('house','eva-fool')

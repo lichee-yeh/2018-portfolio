@@ -345,10 +345,13 @@ section {
     align-items: center;
     .box {
         width: 70%;
-        text-align: center;
+        // text-align: center;
         @include m-767 {
             width: 74%;
         }
+    }
+    .pageBoxOverlap {
+        width: calc(70% + 7vh);
     }
     .pageBox {
         @include m-1024 {
@@ -516,9 +519,48 @@ section {
     }
 }
 
+.pageBoxOverlap {
+    font-size: 0;
+    margin-bottom: 20vh;
+    position: relative;
+    @include m-767 {
+        margin-bottom: 8vh;
+    }
+    .page {
+        width: 50%;
+        @extend %shade;
+        @include m-767 {
+            width: 100%;
+        }
+    }
+    .page2 {
+        @include pc-w {
+            margin-left: 3.5vh;
+        }
+        @include m-767 {
+            margin-bottom: 8vh;
+        }
+    }
+    .page3 {
+        @include pc-w {
+            position: absolute;
+            top: 15vh;
+            right: 3.5vh;
+        }
+    }
+    .page4 {
+        margin-right: 60px;
+        @include m-767 {
+            margin: 0 0 8vh;
+        }
+    }
+}
+
 @import "onemore";
 @import "coke";
 @import "sprite";
 @import "tiger";
 @import "kids";
 @import "eva";
+@import "wild";
+@import "eva-fool";

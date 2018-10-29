@@ -3,7 +3,7 @@
   text-justify: inter-ideographic;
 }
 
-.onePage .page, .onemore .page, .coke .box li, .tiger .box li, .kids .pageBox .page, .kids .page-m .page {
+.onePage .page, .pageBoxOverlap .page, .onemore .page, .coke .box li, .tiger .box li, .kids .pageBox .page, .kids .page-m .page, .eva-fool .banner li {
   -webkit-box-shadow: 0px 9px 28.42px 0.58px rgba(12, 11, 12, .11);
   box-shadow: 0px 9px 28.42px 0.58px rgba(12, 11, 12, .11);
 }
@@ -14,7 +14,7 @@
 }
 
 .introBox .left a .arrow, .switchBox .prev .arrow,
-.switchBox .next .arrow, .btn-top, .btn-top span {
+.switchBox .next .arrow, .btn-top, .btn-top span, .eva-fool .report .news, .eva-fool .report a {
   -webkit-transition: all .3s ease;
   transition: all .3s ease;
 }
@@ -602,13 +602,16 @@ section {
 
 .layout .box {
   width: 70%;
-  text-align: center;
 }
 
 @media screen and (max-width: 767px) {
   .layout .box {
     width: 74%;
   }
+}
+
+.layout .pageBoxOverlap {
+  width: calc(70% + 7vh);
 }
 
 @media screen and (max-width: 1024px) {
@@ -889,6 +892,58 @@ section {
 @media screen and (max-width: 767px) {
   .onePage .page1 {
     margin-bottom: 8vh;
+  }
+}
+
+.pageBoxOverlap {
+  font-size: 0;
+  margin-bottom: 20vh;
+  position: relative;
+}
+
+@media screen and (max-width: 767px) {
+  .pageBoxOverlap {
+    margin-bottom: 8vh;
+  }
+}
+
+.pageBoxOverlap .page {
+  width: 50%;
+}
+
+@media screen and (max-width: 767px) {
+  .pageBoxOverlap .page {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 767px) {
+  .pageBoxOverlap .page2 {
+    margin-left: 3.5vh;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .pageBoxOverlap .page2 {
+    margin-bottom: 8vh;
+  }
+}
+
+@media screen and (min-width: 767px) {
+  .pageBoxOverlap .page3 {
+    position: absolute;
+    top: 15vh;
+    right: 3.5vh;
+  }
+}
+
+.pageBoxOverlap .page4 {
+  margin-right: 60px;
+}
+
+@media screen and (max-width: 767px) {
+  .pageBoxOverlap .page4 {
+    margin: 0 0 8vh;
   }
 }
 
@@ -1547,6 +1602,11 @@ section {
   }
 }
 
+.sprite-24 .box,
+.sprite-cool .box {
+  text-align: center;
+}
+
 .kv-tiger {
   background: url(../img/tiger-kv.jpg) no-repeat center/cover;
 }
@@ -1863,6 +1923,196 @@ section {
 
 .eva .cir3 {
   background: #ea5406;
+}
+
+.kv-wild {
+  background: url(../img/wild_kv.jpg) no-repeat center/cover;
+}
+
+.wild .introBox .left h3 {
+  line-height: 0.8;
+}
+
+.wild .cir1 {
+  background: #2b7cb5;
+}
+
+.wild .cir2 {
+  background: #8fcde1;
+}
+
+.wild .pageBoxOverlap {
+  margin-bottom: 25vh;
+}
+
+@media screen and (max-width: 767px) {
+  .wild .pageBoxOverlap {
+    margin-bottom: 8vh;
+  }
+}
+
+.wild .pageBoxOverlap .page {
+  width: 55%;
+}
+
+@media screen and (max-width: 767px) {
+  .wild .pageBoxOverlap .page {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 767px) {
+  .wild .pageBoxOverlap .page2 {
+    margin-left: 2vh;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .wild .pageBoxOverlap .page2 {
+    margin-left: 0;
+  }
+}
+
+.font-s {
+  font-size: 22.4px;
+  font-size: 1.4rem;
+  color: #a0a0a0;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+@media screen and (max-width: 1440px) {
+  .eva-fool .introBox {
+    margin-top: 20vh;
+  }
+}
+
+.eva-fool .banner {
+  text-align: center;
+  width: 1080px;
+}
+
+@media screen and (max-width: 1440px) {
+  .eva-fool .banner {
+    width: 73%;
+  }
+}
+
+.eva-fool .banner li {
+  width: 500px;
+  display: inline-block;
+  margin: 20px;
+}
+
+@media screen and (max-width: 1440px) {
+  .eva-fool .banner li {
+    width: 46%;
+    margin: 3vh 2%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .eva-fool .banner li {
+    width: 100%;
+  }
+}
+
+.eva-fool .report {
+  margin: 8vh auto;
+}
+
+@media screen and (max-width: 767px) {
+  .eva-fool .report {
+    margin: 5vh auto;
+  }
+}
+
+.eva-fool .report .news {
+  margin: auto;
+  display: block;
+}
+
+@media screen and (min-width: 1025px) {
+  .eva-fool .report .news {
+    opacity: 0.8;
+  }
+}
+
+.eva-fool .report:nth-child(2) .news, .eva-fool .report:nth-child(3) .news {
+  width: 1000px;
+}
+
+@media screen and (max-width: 1440px) {
+  .eva-fool .report:nth-child(2) .news, .eva-fool .report:nth-child(3) .news {
+    width: 96%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .eva-fool .report:nth-child(2) .news, .eva-fool .report:nth-child(3) .news {
+    width: 100%;
+  }
+}
+
+.eva-fool .report:nth-child(4) .news {
+  width: 840px;
+}
+
+@media screen and (max-width: 1024px) {
+  .eva-fool .report:nth-child(4) .news {
+    width: 96%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .eva-fool .report:nth-child(4) .news {
+    width: 100%;
+  }
+}
+
+.eva-fool .report:last-child .news {
+  width: 520px;
+}
+
+@media screen and (max-width: 767px) {
+  .eva-fool .report:last-child .news {
+    width: 100%;
+  }
+}
+
+.eva-fool .report p {
+  color: #555555;
+  margin: 20px 0;
+}
+
+.eva-fool .report a {
+  color: #555555;
+}
+
+@media screen and (max-width: 767px) {
+  .eva-fool .report a {
+    display: block;
+    word-break: break-all;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .eva-fool .report a:hover {
+    color: #a0a0a0;
+  }
+}
+
+.eva-fool .post {
+  text-align: center;
+  margin: auto;
+  margin-bottom: 10vh;
+  width: 600px;
+}
+
+@media screen and (max-width: 767px) {
+  .eva-fool .post {
+    width: 75%;
+  }
 }
 
 /*# sourceMappingURL=project.css.map */
