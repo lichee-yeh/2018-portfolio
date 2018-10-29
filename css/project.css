@@ -3,7 +3,7 @@
   text-justify: inter-ideographic;
 }
 
-.onePage .page, .pageBoxOverlap .page, .onemore .page, .coke .box li, .tiger .box li, .kids .pageBox .page, .kids .page-m .page, .eva-fool .banner li {
+.onePage .page, .pageBoxOverlap .page, .onemore .page, .coke .box li, .tiger .box li, .kids .pageBox .page, .kids .page-m .page {
   -webkit-box-shadow: 0px 9px 28.42px 0.58px rgba(12, 11, 12, .11);
   box-shadow: 0px 9px 28.42px 0.58px rgba(12, 11, 12, .11);
 }
@@ -1930,7 +1930,19 @@ section {
 }
 
 .wild .introBox .left h3 {
-  line-height: 0.8;
+  line-height: 1;
+}
+
+@media screen and (min-width: 767px) {
+  .wild .introBox .left h3 {
+    line-height: 0.8;
+  }
+}
+
+@media screen and (min-width: 767px) {
+  .wild .introBox .right {
+    margin-top: -10px;
+  }
 }
 
 .wild .cir1 {
@@ -1948,6 +1960,7 @@ section {
 @media screen and (max-width: 767px) {
   .wild .pageBoxOverlap {
     margin-bottom: 8vh;
+    width: 74%;
   }
 }
 
@@ -1981,9 +1994,53 @@ section {
   letter-spacing: 1px;
 }
 
+.eva-fool .introBox {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
 @media screen and (max-width: 1440px) {
   .eva-fool .introBox {
     margin-top: 20vh;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .eva-fool .introBox {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .eva-fool .introBox {
+    margin-top: 15vh;
+  }
+}
+
+@media screen and (min-width: 767px) {
+  .eva-fool .right {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 10vh;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .eva-fool .right {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 767px) {
+  .eva-fool .intro {
+    width: 45%;
   }
 }
 
@@ -2018,7 +2075,7 @@ section {
 }
 
 .eva-fool .report {
-  margin: 8vh auto;
+  margin: 10vh auto;
 }
 
 @media screen and (max-width: 767px) {
@@ -2033,7 +2090,7 @@ section {
 }
 
 @media screen and (min-width: 1025px) {
-  .eva-fool .report .news {
+  .eva-fool .report .news:hover {
     opacity: 0.8;
   }
 }
@@ -2107,6 +2164,7 @@ section {
   margin: auto;
   margin-bottom: 10vh;
   width: 600px;
+  height: 800px;
 }
 
 @media screen and (max-width: 767px) {

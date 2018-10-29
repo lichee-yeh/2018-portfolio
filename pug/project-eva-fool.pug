@@ -3,15 +3,7 @@ include ./include/mixin
 block own_style
     link(rel = 'stylesheet', href = 'css/project.css')
 block afterBody
-    #fb-root
-    script.
-        (function(d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) return;
-        js = d.createElement(s); js.id = id;
-        js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2';
-        fjs.parentNode.insertBefore(js, fjs);
-        }(document, 'script', 'facebook-jssdk'));
+
 block content
     +scroll
     main.por.eva-fool
@@ -20,7 +12,7 @@ block content
                 h3 
                     span.break 長榮航空
                     span.break 機場地勤才藝班
-                a(href="http://747.evaair.com/#/zh" target='_blank') 
+                a(href="https://www.facebook.com/evaairwayscorp.tw/posts/770880023059183" target='_blank') 
                     span VIEW WEBSITE
                     span.arrow
             .right
@@ -79,5 +71,5 @@ block content
                 p 中時電子報：
                     a(href="http://www.chinatimes.com/realtimenews/20170401001233-260415" target="_blank") http://www.chinatimes.com/realtimenews/20170401001233-260415
         .post
-            <div class="fb-post" data-href="https://www.facebook.com/evaairwayscorp.tw/posts/770880023059183" data-show-text="true"><blockquote cite="https://www.facebook.com/evaairwayscorp.tw/posts/770880023059183" class="fb-xfbml-parse-ignore"><p>【機場地勤才藝班...</p>Posted by <a href="https://www.facebook.com/evaairwayscorp.tw/">EVA Airways Corp. 長榮航空</a> on&nbsp;<a href="https://www.facebook.com/evaairwayscorp.tw/posts/770880023059183">Friday, March 31, 2017</a></blockquote></div>
+            <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fevaairwayscorp.tw%2Fposts%2F770880023059183&width=500" width="100%" height="700"style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
         +switchBox('tiger','#')

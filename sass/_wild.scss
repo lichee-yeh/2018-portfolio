@@ -4,7 +4,15 @@
 
 .wild {
     .introBox .left h3 {
-        line-height: 0.8;
+        line-height: 1;
+        @include pc-w {
+            line-height: 0.8;
+        }
+    }
+    .introBox .right {
+        @include pc-w {
+            margin-top: -10px;
+        }
     }
     .cir1 {
         background: #2b7cb5;
@@ -16,6 +24,7 @@
         margin-bottom: 25vh;
         @include m-767 {
             margin-bottom: 8vh;
+            width: 74%;
         }
         .page {
             width: 55%;
