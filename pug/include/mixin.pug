@@ -32,7 +32,7 @@ mixin scroll
 mixin work(name, tt , type)
 	-var proj = "project-"
 	-var file = ".html"
-	a(href= proj + name + file).item.wow.fadeInUp
+	a(href= proj + name + file).item
 		.bn&attributes(attributes)
 		|
 		h3 #{tt}
