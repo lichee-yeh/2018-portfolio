@@ -507,6 +507,7 @@ section {
 }
 
 .onePage {
+    text-align: center;
     .page {
         @extend %shade;
         max-width: 1024px;

@@ -881,6 +881,10 @@ section {
   }
 }
 
+.onePage {
+  text-align: center;
+}
+
 .onePage .page {
   max-width: 1024px;
 }
