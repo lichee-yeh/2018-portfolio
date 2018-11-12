@@ -34,6 +34,13 @@
     background-color: black;
 }
 
+.text__first-bg,
+.text__second-bg {
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
+}
+
 .restart {
     position: absolute;
     font-size: 12px;
