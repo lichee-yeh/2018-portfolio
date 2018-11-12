@@ -1,24 +1,24 @@
 var Index = {
     data: {
         tl: null,
-        init: function () {},
+        init: function() {},
     },
     selector: {
-        init: function () {
+        init: function() {
             this.menuPC = $('nav.pc')
             this.divScroll = $('div.scroll')
             this.divContact = $('div.contact')
         },
     },
     setups: {
-        wow: function () {
+        wow: function() {
             // 預設
             // 客製直接寫在 data-wow-offset
             new WOW({
                 offset: 300,
             }).init()
         },
-        tweenmax: function () {
+        tweenmax: function() {
             Index.data.tl = new TimelineLite({
                 paused: true
             })
@@ -32,7 +32,7 @@ var Index = {
                     scaleX: 1
                 })
                 // 標題 第二格 右滑速度
-                .to(secBg, .7, {
+                .to(secBg, .5, {
                     scaleX: 1
                 })
                 .to(word, 0.1, {
@@ -61,7 +61,7 @@ var Index = {
                         'opacity': 1
                     }
                 })
-                .add(function () {
+                .add(function() {
                     if (!is.mobile()) {
                         Index.selector.menuPC.show()
                         Index.selector.divContact.show()
@@ -72,21 +72,21 @@ var Index = {
         }
 
     },
-    initListener: function () {},
-    init: function (callback) {
+    initListener: function() {},
+    init: function(callback) {
         this.setups.wow()
         this.setups.tweenmax()
         this.selector.init()
-        setTimeout(function () {
+        setTimeout(function() {
             callback()
         }, 200);
     },
 }
 
-$(function () {
-    setTimeout(function () {
-        $('.loading').fadeOut(500, function () {
-            Index.init(function () {
+$(function() {
+    setTimeout(function() {
+        $('.loading').fadeOut(500, function() {
+            Index.init(function() {
                 Index.data.tl.play()
             })
 
