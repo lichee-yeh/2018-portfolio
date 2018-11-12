@@ -29,23 +29,29 @@
       		async: true
       	},
       	h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
-      })(document);}
+      })(document);
+      
+      
     </script>
-    <!-- Global site tag (gtag.js) - Google Analytics-->
-    <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-128367756-1">
-      <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'UA-128367756-1');
-      </script>
-    </script>
+    <!-- Junxiang-->
+    <!--css-->
+    <link rel="stylesheet" href="css/vendor/animate.css">
+    <!--js-->
+    <script src="./js/vendor/is.min.js"></script>
+    <script src="./js/vendor/wow.min.js"></script>
+    <script src="./js/vendor/scrollreveal.min.js"></script>
+    <script src="./js/vendor/TweenMax.min.js"></script>
+    <script src="./js/vendor/ScrollMagic.min.js"></script>
+    <script src="./js/_Shared.min.js"></script>
+    <script src="./js/Header.min.js"></script>
+    <!--//////////-->
     <!-- own style-->
     <link rel="stylesheet" href="css/works.css">
+    <script src="./js/Work.min.js"></script>
   </head>
   <body>
     <!--loading-->
-    <div class="loading" style="display:none">
+    <div class="loading">
       <div class="loading-text"><span class="loading-text-words">L</span>            <span class="loading-text-words">O</span>            <span class="loading-text-words">A</span>            <span class="loading-text-words">D</span>            <span class="loading-text-words">I</span>            <span class="loading-text-words">N</span>            <span class="loading-text-words">G</span></div>
     </div>
     <!--trans-->
@@ -70,7 +76,7 @@
         <nav class="overlay-menu">
           <ul>
             <li><a href="index.html">home</a></li>      
-            <li><a href="#">about</a></li>      
+            <li data-nav-type="about"><a href="#">about</a></li>      
             <li><a href="work.html">work</a></li>      
           </ul>
         </nav>
@@ -78,11 +84,11 @@
       <script src="http://cdnjs.cloudflare.com/ajax/libs/wow/0.1.12/wow.min.js"> </script>
       <script src="js/vendor/bur.js"></script>
       <!-- PC menu -->
-      <nav class="pc">
+      <nav class="pc animated fadeInLeft" style="display:none;">
         <ul>
           <li><a href="index.html">home</a>
           </li>
-          <li><a href="#">about</a>
+          <li data-nav-type="about"><a href="#">about</a>
           </li>
           <li><a class="active">work</a>
           </li>
@@ -90,7 +96,7 @@
       </nav>
     </header>
     <!-- about-->
-    <div class="about" style="display:none"><a class="close" href="#">close </a>
+    <div class="about animated fadeInLeft" style="display:none"><a class="close" href="#">close </a>
       <div class="bg"></div>
       <div class="content">
         <div class="pic"><img src="img/profile.jpg">
@@ -168,41 +174,41 @@
     </div>
     <div class="wrap">
           <div class="scroll"><span>scroll</span><span class="arrow"></span></div>
-      <h2 class="tt"><span>work</span></h2>
-      <div class="content"><a class="item" href="project-one-more.html">
+      <h2 class="tt wow fadeInUp" style="opacity:0;"><span>work</span></h2>
+      <div class="content"><a class="item wow fadeInUp" href="project-one-more.html" style="opacity:0;">
               <div class="bn bn-om"></div>
               <h3>one more trip 玩默官方網站</h3>
-              <p>Responsive Website, Brand Identity</p></a><a class="item" href="project-coke.html">
+              <p>Responsive Website, Brand Identity</p></a><a class="item wow fadeInUp" href="project-coke.html" style="opacity:0;">
               <div class="bn bn-coke"></div>
               <h3>Coca-Cola / 食尚餐廚集點送</h3>
-              <p>Mobile First Website</p></a><a class="item" href="project-sprite-cool.html">
+              <p>Mobile First Website</p></a><a class="item wow fadeInUp" href="project-sprite-cool.html" style="opacity:0;">
               <div class="bn bn-sprite-cool"></div>
               <h3>Sprite / Cool 玩瓶 BE YOU 激發最酷的你</h3>
-              <p>Responsive Website</p></a><a class="item" href="project-sprite-24.html">
+              <p>Responsive Website</p></a><a class="item wow fadeInUp" href="project-sprite-24.html" style="opacity:0;">
               <div class="bn bn-sprite-24"></div>
               <h3>Sprite / Cool 玩瓶 沁涼絕殺 24 秒</h3>
-              <p>Mobile First Website</p></a><a class="item" href="project-tiger.html">
+              <p>Mobile First Website</p></a><a class="item wow fadeInUp" href="project-tiger.html" style="opacity:0;">
               <div class="bn bn-tiger"></div>
               <h3>tigerair / 到名古屋狂旅行</h3>
-              <p>Adaptive Website, Motion Design</p></a><a class="item" href="project-eva.html">
+              <p>Adaptive Website, Motion Design</p></a><a class="item wow fadeInUp" href="project-eva.html" style="opacity:0;">
               <div class="bn bn-eva"></div>
               <h3>EVA AIR / 那些年我們一起搭的 747-400</h3>
-              <p>Responsive Website</p></a><a class="item" href="project-kids.html">
+              <p>Responsive Website</p></a><a class="item wow fadeInUp" href="project-kids.html" style="opacity:0;">
               <div class="bn bn-kids"></div>
               <h3>兒童福利聯盟 / 長假營養資助計畫</h3>
-              <p>Responsive Website</p></a><a class="item" href="project-house.html">
+              <p>Responsive Website</p></a><a class="item wow fadeInUp" href="project-house.html" style="opacity:0;">
               <div class="bn bn-house"></div>
               <h3>城中建設 / 閱狷聲電子錶版</h3>
-              <p>1920 HD Website</p></a><a class="item" href="project-wildaid.html">
+              <p>1920 HD Website</p></a><a class="item wow fadeInUp" href="project-wildaid.html" style="opacity:0;">
               <div class="bn bn-wildaid"></div>
               <h3>WildAid 野生救援 / 無翅聯盟官方網站</h3>
-              <p>Responsive Website</p></a><a class="item" href="project-eva-fool.html">
+              <p>Responsive Website</p></a><a class="item wow fadeInUp" href="project-eva-fool.html" style="opacity:0;">
               <div class="bn bn-eva-fool"></div>
               <h3>EVA AIR / 粉絲專頁愚人節貼文</h3>
-              <p>Facebook Banner</p></a><a class="item" href="project-eva-wifi.html">
+              <p>Facebook Banner</p></a><a class="item wow fadeInUp" href="project-eva-wifi.html" style="opacity:0;">
               <div class="bn bn-eva-wifi"></div>
               <h3>EVA AIR / 粉絲專頁機上 Wi-Fi 宣傳影片</h3>
-              <p>Facebook Wifi Promotional Video</p></a><a class="item" href="project-google.html">
+              <p>Facebook Wifi Promotional Video</p></a><a class="item wow fadeInUp" href="project-google.html" style="opacity:0;">
               <div class="bn bn-google"></div>
               <h3>Google / 『猴』你祝福 - 數位天燈傳遞幸福</h3>
               <p>GDN Banner</p></a>

@@ -2,21 +2,22 @@ extends ./include/layout
 include ./include/mixin
 block own_style
     link(rel = 'stylesheet', href = 'css/project.css')
+    script(src = './js/Project.min.js')
 block content
     +scroll
     main.por.house
         .kv.kv-house
-        .device.mac
+        .device.mac.wow.fadeInUp(style={opacity:0})
             +png('house')
         section.introBox
-            .left
+            .left.wow.fadeInUp(style={opacity:0})
                 h3 
                     span.break 閱狷聲
                     span.break 電子錶版
                 a(href="http://bighouse.webgene.com.tw/" target='_blank') 
                     span VIEW WEBSITE
                     span.arrow
-            .right
+            .right.wow.fadeInUp(style={opacity:0})
                 .intro
                     h4 Description
                     p 
@@ -39,12 +40,12 @@ block content
                             span 
                                 span.break 1920 HD Web Design, UI Design,
                                 span.break PSD to Html
-        .mockup
+        .mockup.wow.fadeInUp(style={opacity:0})
             +jpg('house-layout')
         section.identity
             +sub-tt('identity')
             main
-                .left
+                .left.wow.fadeInUp(style={opacity:0})
                     .info
                         h4 typography
                         ul.typo
@@ -52,7 +53,7 @@ block content
                                 p 思源黑體 Noto Sans CJK TC Regular
                                 p.font-m 思源黑體 Noto Sans CJK TC Medium
                                 p.font-b 思源黑體 Noto Sans CJK TC Bold
-                .right
+                .right.wow.fadeInUp(style={opacity:0})
                     .info
                         h4 color
                         ul.color.kids-color
@@ -65,6 +66,6 @@ block content
                             li
                                 .cir.cir3
                                 p #dab896
-        .mockup
+        .mockup.wow.fadeInUp(style={opacity:0})
             +jpg('house-layout2')
         +switchBox('kids','wildaid')

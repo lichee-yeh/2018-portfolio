@@ -8,7 +8,7 @@ html
     body
         block afterBody
         //loading
-        .loading(style="display:none")
+        .loading(style="")
             .loading-text
                 span.loading-text-words L
                 |             
@@ -35,13 +35,13 @@ html
             include menubox
             // PC menu 
             block menu
-                nav.pc
+                nav.pc.animated.fadeInLeft(style={display:'none'})
                     ul
                         block nav-index
                             li
                                 block home
                                     a(href="index.html") home
-                        li
+                        li(data-nav-type="about")
                             block about
                                 a(href="#") about
                         li
@@ -60,10 +60,8 @@ html
         block footer
             footer
                 .contactBox.por
-                    .contact
+                    .contact.wow.fadeInUp(data-wow-offset="100" data-wow-duration="1.5s")
                         p say hello?
                         .box
                             a(href="tel:+886928135451").tel +886-928-135-451
                             a(href="mailto:yehcyamm@gmail.com").mail yehcyamm@gmail.com
-
-

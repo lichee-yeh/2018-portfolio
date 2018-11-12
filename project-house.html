@@ -29,23 +29,29 @@
       		async: true
       	},
       	h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
-      })(document);}
+      })(document);
+      
+      
     </script>
-    <!-- Global site tag (gtag.js) - Google Analytics-->
-    <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-128367756-1">
-      <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'UA-128367756-1');
-      </script>
-    </script>
+    <!-- Junxiang-->
+    <!--css-->
+    <link rel="stylesheet" href="css/vendor/animate.css">
+    <!--js-->
+    <script src="./js/vendor/is.min.js"></script>
+    <script src="./js/vendor/wow.min.js"></script>
+    <script src="./js/vendor/scrollreveal.min.js"></script>
+    <script src="./js/vendor/TweenMax.min.js"></script>
+    <script src="./js/vendor/ScrollMagic.min.js"></script>
+    <script src="./js/_Shared.min.js"></script>
+    <script src="./js/Header.min.js"></script>
+    <!--//////////-->
     <!-- own style-->
     <link rel="stylesheet" href="css/project.css">
+    <script src="./js/Project.min.js"></script>
   </head>
   <body>
     <!--loading-->
-    <div class="loading" style="display:none">
+    <div class="loading">
       <div class="loading-text"><span class="loading-text-words">L</span>            <span class="loading-text-words">O</span>            <span class="loading-text-words">A</span>            <span class="loading-text-words">D</span>            <span class="loading-text-words">I</span>            <span class="loading-text-words">N</span>            <span class="loading-text-words">G</span></div>
     </div>
     <!--trans-->
@@ -70,7 +76,7 @@
         <nav class="overlay-menu">
           <ul>
             <li><a href="index.html">home</a></li>      
-            <li><a href="#">about</a></li>      
+            <li data-nav-type="about"><a href="#">about</a></li>      
             <li><a href="work.html">work</a></li>      
           </ul>
         </nav>
@@ -78,11 +84,11 @@
       <script src="http://cdnjs.cloudflare.com/ajax/libs/wow/0.1.12/wow.min.js"> </script>
       <script src="js/vendor/bur.js"></script>
       <!-- PC menu -->
-      <nav class="pc">
+      <nav class="pc animated fadeInLeft" style="display:none;">
         <ul>
           <li><a href="index.html">home</a>
           </li>
-          <li><a href="#">about</a>
+          <li data-nav-type="about"><a href="#">about</a>
           </li>
           <li><a href="work.html">work</a>
           </li>
@@ -90,7 +96,7 @@
       </nav>
     </header>
     <!-- about-->
-    <div class="about" style="display:none"><a class="close" href="#">close </a>
+    <div class="about animated fadeInLeft" style="display:none"><a class="close" href="#">close </a>
       <div class="bg"></div>
       <div class="content">
         <div class="pic"><img src="img/profile.jpg">
@@ -170,13 +176,13 @@
           <div class="scroll"><span>scroll</span><span class="arrow"></span></div>
       <main class="por house">
         <div class="kv kv-house"></div>
-        <div class="device mac"><img src="img/house.png">
+        <div class="device mac wow fadeInUp" style="opacity:0;"><img src="img/house.png">
         </div>
         <section class="introBox">
-          <div class="left">
+          <div class="left wow fadeInUp" style="opacity:0;">
             <h3> <span class="break">閱狷聲</span><span class="break">電子錶版</span></h3><a href="http://bighouse.webgene.com.tw/" target="_blank"> <span>VIEW WEBSITE</span><span class="arrow"></span></a>
           </div>
-          <div class="right">
+          <div class="right wow fadeInUp" style="opacity:0;">
             <div class="intro">
               <h4>Description</h4>
               <p> <span class="break">過好日子，也要好好過日子。這是城中建設推出的新成屋案【閱狷聲】在銷售時使用的電子錶版，因此只提供給 1920 全銀幕使用，在字體以及按鈕的大小規劃上，為了讓user在距離不是很近的電視上能夠清楚看到文字以及按鈕，都有特別放大，讓 user 也比較好操作。</span><span class="break">網站整體以簡潔、人文、典雅的風格為主，希望能讓想買房子的人在聽銷售人員解說時也能感受到沉靜的質感，一起好好享受生活。</span></p>
@@ -192,12 +198,12 @@
             </div>
           </div>
         </section>
-        <div class="mockup"><img src="img/house-layout.jpg">
+        <div class="mockup wow fadeInUp" style="opacity:0;"><img src="img/house-layout.jpg">
         </div>
         <section class="identity">
               <h2 class="tt"><span>identity</span></h2>
           <main>
-            <div class="left">
+            <div class="left wow fadeInUp" style="opacity:0;">
               <div class="info">
                 <h4>typography</h4>
                 <ul class="typo">
@@ -209,7 +215,7 @@
                 </ul>
               </div>
             </div>
-            <div class="right">
+            <div class="right wow fadeInUp" style="opacity:0;">
               <div class="info">
                 <h4>color</h4>
                 <ul class="color kids-color">
@@ -230,14 +236,14 @@
             </div>
           </main>
         </section>
-        <div class="mockup"><img src="img/house-layout2.jpg">
+        <div class="mockup wow fadeInUp" style="opacity:0;"><img src="img/house-layout2.jpg">
         </div>
             <div class="switchBox por"><a class="btn-top" href="#"><span></span></a><a class="prev por" href="project-kids.html"><span class="arrowBox"><span class="arrow"></span></span><span>prev project</span></a><a class="next por" href="project-wildaid.html"> <span>next project</span><span class="arrowBox"><span class="arrow"></span></span></a></div>
       </main>
     </div>
     <footer>
       <div class="contactBox por">
-        <div class="contact">
+        <div class="contact wow fadeInUp" data-wow-offset="100" data-wow-duration="1.5s">
           <p>say hello?</p>
           <div class="box"><a class="tel" href="tel:+886928135451">+886-928-135-451</a><a class="mail" href="mailto:yehcyamm@gmail.com">yehcyamm@gmail.com</a></div>
         </div>

@@ -29,23 +29,30 @@
       		async: true
       	},
       	h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
-      })(document);}
+      })(document);
+      
+      
     </script>
-    <!-- Global site tag (gtag.js) - Google Analytics-->
-    <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-128367756-1">
-      <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'UA-128367756-1');
-      </script>
-    </script>
+    <!-- Junxiang-->
+    <!--css-->
+    <link rel="stylesheet" href="css/vendor/animate.css">
+    <!--js-->
+    <script src="./js/vendor/is.min.js"></script>
+    <script src="./js/vendor/wow.min.js"></script>
+    <script src="./js/vendor/scrollreveal.min.js"></script>
+    <script src="./js/vendor/TweenMax.min.js"></script>
+    <script src="./js/vendor/ScrollMagic.min.js"></script>
+    <script src="./js/_Shared.min.js"></script>
+    <script src="./js/Header.min.js"></script>
+    <!--//////////-->
     <!-- own style-->
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/jxIndex.css">
+    <script src="./js/Index.min.js"></script>
   </head>
   <body>
     <!--loading-->
-    <div class="loading" style="display:none">
+    <div class="loading">
       <div class="loading-text"><span class="loading-text-words">L</span>            <span class="loading-text-words">O</span>            <span class="loading-text-words">A</span>            <span class="loading-text-words">D</span>            <span class="loading-text-words">I</span>            <span class="loading-text-words">N</span>            <span class="loading-text-words">G</span></div>
     </div>
     <!--trans-->
@@ -70,7 +77,7 @@
         <nav class="overlay-menu">
           <ul>
             <li><a href="index.html">home</a></li>      
-            <li><a href="#">about</a></li>      
+            <li data-nav-type="about"><a href="#">about</a></li>      
             <li><a href="work.html">work</a></li>      
           </ul>
         </nav>
@@ -78,9 +85,9 @@
       <script src="http://cdnjs.cloudflare.com/ajax/libs/wow/0.1.12/wow.min.js"> </script>
       <script src="js/vendor/bur.js"></script>
       <!-- PC menu -->
-      <nav class="pc">
+      <nav class="pc animated fadeInLeft" style="display:none;">
         <ul>
-          <li><a href="#">about</a>
+          <li data-nav-type="about"><a href="#">about</a>
           </li>
           <li><a href="work.html">work</a>
           </li>
@@ -88,7 +95,7 @@
       </nav>
     </header>
     <!-- about-->
-    <div class="about" style="display:none"><a class="close" href="#">close </a>
+    <div class="about animated fadeInLeft" style="display:none"><a class="close" href="#">close </a>
       <div class="bg"></div>
       <div class="content">
         <div class="pic"><img src="img/profile.jpg">
@@ -168,16 +175,16 @@
           <div class="scroll"><span>scroll</span><span class="arrow"></span></div>
       <section class="kv">
         <main class="abs">
-          <h1> <span class="break">hey,</span><span class="break">Lichee <span class="break-m">is here.</span></span></h1>
-          <p>designer / freelancer / hualiener</p>
+          <h1> <span class="text__first"><span class="text__word">hey, </span><span class="text__first-bg"></span></span><br><span class="text__second"><span class="text__word">Lichee</span><span class="text__word"> is here.</span><span class="text__second-bg"></span></span></h1>
+          <p style="opacity:0;">designer / freelancer / hualiener</p>
         </main>
-        <div class="contact">
+        <div class="contact animated fadeInUp" style="display:none;">
           <p>+886-928-135-451</p><a class="mail" href="mailto:yehcyamm@gmail.com">yehcyamm@gmail.com</a>
         </div>
       </section>
       <section class="work">
-        <h2 class="tt"> <span>work</span></h2>
-        <div class="project onemore">
+        <h2 class="tt wow fadeInUp"> <span>work</span></h2>
+        <div class="project onemore wow fadeInUp"> 
           <div class="device"><img src="img/onemore.png">
           </div>
           <div class="info">
@@ -189,7 +196,7 @@
             </ul>
           </div>
         </div>
-        <div class="project coke">
+        <div class="project coke wow fadeInUp"> 
           <div class="info">
             <ul>
               <li class="work-tt"> <span class="break">Coca-Cola</span><span class="break">食尚餐廚集點送</span></li>
@@ -201,7 +208,7 @@
           <div class="device"><img src="img/coke.png">
           </div>
         </div>
-        <div class="project sprite">
+        <div class="project sprite wow fadeInUp"> 
           <div class="device"><img src="img/sprite-cool.png">
           </div>
           <div class="info">
@@ -213,8 +220,8 @@
             </ul>
           </div>
         </div>
-        <div class="moreBox por"><span class="arrowDown"></span><a class="btn-more" href="work.html">see more work</a></div>
-        <div class="contact outer-contact">
+        <div class="moreBox por wow fadeInUp"> <span class="arrowDown"></span><a class="btn-more" href="work.html">see more work</a></div>
+        <div class="contact outer-contact wow fadeInUp" data-wow-offset="50" data-wow-duration="1.5s">
           <p>say hello?</p>
           <div class="box">
             <p>+886-928-135-451</p><a class="mail" href="mailto:yehcyamm@gmail.com">yehcyamm@gmail.com</a>

@@ -2,21 +2,22 @@ extends ./include/layout
 include ./include/mixin
 block own_style
     link(rel = 'stylesheet', href = 'css/project.css')
+    script(src = './js/Project.min.js')
 block content
     +scroll
     main.por.kids
         .kv.kv-kids
-        .device.laptop
+        .device.laptop.wow.fadeInUp(style={opacity:0})
             +png('kids')
         section.introBox
-            .left
+            .left.wow.fadeInUp(style={opacity:0})
                 h3 
                     span.break 弱勢兒童
                     span.break 長假營養資助計畫
                 a(href="https://love.children.org.tw/" target='_blank') 
                     span VIEW WEBSITE
                     span.arrow
-            .right
+            .right.wow.fadeInUp(style={opacity:0})
                 .intro
                     h4 Description
                     p 
@@ -39,12 +40,12 @@ block content
                             span 
                                 span.break Responsive Web Design, UI Design,
                                 span.break PSD to Html
-        .mockup
+        .mockup.wow.fadeInUp(style={opacity:0})
             +jpg('kids_layout')
         section.identity
             +sub-tt('identity')
             main
-                .left
+                .left.wow.fadeInUp(style={opacity:0})
                     .info
                         h4 typography
                         ul.typo
@@ -55,7 +56,7 @@ block content
                                 p 思源黑體 Noto Sans CJK TC Regular
                                 p.font-m 思源黑體 Noto Sans CJK TC Medium
                                 p.font-b 思源黑體 Noto Sans CJK TC Bold
-                .right
+                .right.wow.fadeInUp(style={opacity:0})
                     .info
                         h4 color
                         ul.color.kids-color
@@ -70,20 +71,20 @@ block content
                                 p #f1e6d0
         section.layout
             +sub-tt('layout')
-            .box.onePage 
+            .box.onePage.wow.fadeInUp(style={opacity:0})
                 .page.page1
                     +jpg('kids_layout2')
-            .box.pageBoxOverlap
+            .box.pageBoxOverlap.wow.fadeInUp(style={opacity:0})
                 .page.page2
                     +jpg('kids_layout3')
                 .page.page3
                     +jpg('kids_layout4')
-            .box.pageBoxOverlap
+            .box.pageBoxOverlap.wow.fadeInUp(style={opacity:0})
                 .page.page2
                     +jpg('kids_layout5')
                 .page.page3
                     +jpg('kids_layout6')
-            .box.page-m
+            .box.page-m.wow.fadeInUp(style={opacity:0})
                 .page.page4
                     +jpg('kids_layout7')
                 .page

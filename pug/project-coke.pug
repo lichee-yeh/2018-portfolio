@@ -2,21 +2,22 @@ extends ./include/layout
 include ./include/mixin
 block own_style
     link(rel = 'stylesheet', href = 'css/project.css')
+    script(src = './js/Project.min.js')
 block content
     +scroll
     main.por.coke
         .kv.kv-coke
-        .device.phone
+        .device.phone.wow.fadeInUp(style={opacity:0})
             +png('coke')
         section.introBox
-            .left
+            .left.wow.fadeInUp(style={opacity:0})
                 h3 
                     span.break Coca-Cola
                     span.break 食尚餐廚集點送
                 a(href="http://cell.webgene.com.tw/coke/event/1612_coke_with_food/Coke-FoodPoint/" target='_blank') 
                     span VIEW WEBSITE
                     span.arrow
-            .right
+            .right.wow.fadeInUp(style={opacity:0})
                 .intro
                     h4 Description
                     p 
@@ -39,9 +40,9 @@ block content
                             span 
                                 span.break Web Design, UI Design,
                                 span.break Logo Design, PSD to Html
-        .mockup
+        .mockup.wow.fadeInUp(style={opacity:0})
             +jpg('coke_layout')
-        section.identity
+        section.identity.wow.fadeInUp(style={opacity:0})
             +sub-tt('identity')
             main
                 .left
@@ -73,10 +74,10 @@ block content
                                 p #4a4a4a
         section.layout
             +sub-tt('layout')
-            .box
+            .box.wow.fadeInUp(style={opacity:0})
                 .rwd.por
                     +png('coke_layout2')
-            .box
+            .box.wow.fadeInUp(style={opacity:0})
                 ul
                     li
                         +jpg('coke_layout3')
@@ -86,7 +87,7 @@ block content
                         +jpg('coke_layout5')
                     li
                         +jpg('coke_layout6')
-        .handBox.por
-            .mockup.abs
+        .handBox.por.wow.fadeInUp(style={opacity:0})
+            .mockup.abs.wow.fadeInUp(style={opacity:0})
                 +png('coke_hand')
         +switchBox('one-more','sprite-cool')

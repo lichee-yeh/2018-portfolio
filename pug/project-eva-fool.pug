@@ -2,6 +2,7 @@ extends ./include/layout
 include ./include/mixin
 block own_style
     link(rel = 'stylesheet', href = 'css/project.css')
+    script(src = './js/Project.min.js')
 block afterBody
     #fb-root
     script.
@@ -16,7 +17,7 @@ block content
     +scroll
     main.por.eva-fool.banner-info
         section.introBox
-            .left
+            .left.wow.fadeInUp(style={opacity:0})
                 h3 
                     span.break 長榮航空
                         span.break-m 粉絲專業 
@@ -24,7 +25,7 @@ block content
                 a(href="https://www.facebook.com/evaairwayscorp.tw/posts/770880023059183" target='_blank') 
                     span VIEW WEBSITE
                     span.arrow
-            .right
+            .right.wow.fadeInUp(style={opacity:0})
                 .intro
                     h4 Description
                     p 
@@ -50,34 +51,34 @@ block content
                                 span.break Illustration
         section.banner
             ul
-                li
+                li.wow.fadeInUp(style={opacity:0})
                     +jpg('eva-fool1')
-                li
+                li.wow.fadeInUp(style={opacity:0})
                     +jpg('eva-fool2')
-                li
+                li.wow.fadeInUp(style={opacity:0})
                     +jpg('eva-fool3')
-                li
+                li.wow.fadeInUp(style={opacity:0})
                     +jpg('eva-fool4')
-            .report
+            .report.wow.fadeInUp(style={opacity:0})
                 a(href="http://yahoo-emarketing.tumblr.com/post/159257615841/41afd").news 
                     +png('eva-fool-report1')
                 p YAHOO!奇摩 網路行銷：
                     a(href="http://yahoo-emarketing.tumblr.com/post/159257615841/41afd") http://yahoo-emarketing.tumblr.com/post/159257615841/41afd
-            .report
+            .report.wow.fadeInUp(style={opacity:0})
                 a(href="http://news.tvbs.com.tw/life/717580").news 
                     +png('eva-fool-report4')
                 p TVBS新聞網：
                     a(href="http://news.tvbs.com.tw/life/717580") http://news.tvbs.com.tw/life/717580
-            .report
+            .report.wow.fadeInUp(style={opacity:0})
                 a(href="http://www.chinatimes.com/realtimenews/20170401001233-260415").news 
                     +png('eva-fool-report2')
                 p 中時電子報：
                     a(href="http://www.chinatimes.com/realtimenews/20170401001233-260415") http://www.chinatimes.com/realtimenews/20170401001233-260415
-            .report
+            .report.wow.fadeInUp(style={opacity:0})
                 a(href="http://www.cna.com.tw/news/firstnews/201704015009.aspx").news 
                     +png('eva-fool-report3')
                 p YAHOO!奇摩 網路行銷：
                     a(href="http://www.cna.com.tw/news/firstnews/201704015009.aspx") http://www.cna.com.tw/news/firstnews/201704015009.aspx
-        .post
+        .post.wow.fadeInUp(style={opacity:0})
             <div class="fb-post" data-href="https://www.facebook.com/evaairwayscorp.tw/posts/770880023059183" data-show-text="true"><blockquote cite="https://www.facebook.com/evaairwayscorp.tw/posts/770880023059183" class="fb-xfbml-parse-ignore"><p>【機場地勤才藝班...</p>Posted by <a href="https://www.facebook.com/evaairwayscorp.tw/">EVA Airways Corp. 長榮航空</a> on&nbsp;<a href="https://www.facebook.com/evaairwayscorp.tw/posts/770880023059183">Friday, March 31, 2017</a></blockquote></div>
-        +switchBox('eva-wifi','one-more')
+        +switchBox('wildaid','eva-wifi')

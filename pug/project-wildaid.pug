@@ -2,21 +2,22 @@ extends ./include/layout
 include ./include/mixin
 block own_style
     link(rel = 'stylesheet', href = 'css/project.css')
+    script(src = './js/Project.min.js')
 block content
     +scroll
     main.por.wild
         .kv.kv-wild
-        .device.mac
+        .device.mac.wow.fadeInUp(style={opacity:0})
             +png('wild')
         section.introBox
-            .left
+            .left.wow.fadeInUp(style={opacity:0})
                 h3 
                     span.break 無翅宣言官方網站
                     span.font-s (Pitch Vision)
                 a(href="https://lichee-yeh.github.io/wildaid/" target='_blank') 
                     span VIEW WEBSITE
                     span.arrow
-            .right
+            .right.wow.fadeInUp(style={opacity:0})
                 .intro
                     h4 Description
                     p 
@@ -39,12 +40,12 @@ block content
                             span 
                                 span.break Responsive Web Design, UI Design,
                                 span.break PSD to Html
-        .mockup
+        .mockup.wow.fadeInUp(style={opacity:0})
             +jpg('wild_layout')
         section.identity
             +sub-tt('identity')
             main
-                .left
+                .left.wow.fadeInUp(style={opacity:0})
                     .info
                         h4 typography
                         ul.typo
@@ -52,7 +53,7 @@ block content
                                 p 思源黑體 Noto Sans CJK TC Regular
                                 p.font-m 思源黑體 Noto Sans CJK TC Medium
                                 p.font-b 思源黑體 Noto Sans CJK TC Bold
-                .right
+                .right.wow.fadeInUp(style={opacity:0})
                     .info
                         h4 color
                         ul.color.kids-color
@@ -65,16 +66,16 @@ block content
         section.layout
             +sub-tt('layout')
             .box.onePage 
-                .page.page1
+                .page.page1.wow.fadeInUp(style={opacity:0})
                     +jpg('wild_layout2')
             .box.pageBoxOverlap
-                .page.page2
+                .page.page2.wow.fadeInUp(style={opacity:0})
                     +jpg('wild-s1')
-                .page.page3
+                .page.page3.wow.fadeInUp(style={opacity:0})
                     +jpg('wild-s2')
             .box.pageBoxOverlap
-                .page.page2
+                .page.page2.wow.fadeInUp(style={opacity:0})
                     +jpg('wild-s3')
-                .page.page3
+                .page.page3.wow.fadeInUp(style={opacity:0})
                     +jpg('wild-s4')
         +switchBox('house','eva-fool')

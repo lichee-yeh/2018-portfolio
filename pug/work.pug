@@ -2,11 +2,12 @@ extends ./include/layout
 include ./include/mixin
 block own_style
 	link(rel = 'stylesheet', href = 'css/works.css')
+	script(src = './js/Work.min.js')
 block work
 	a.active work
 block content
 	+scroll
-	h2.tt
+	h2.tt.wow.fadeInUp(style={opacity:0})
 		span work
 	.content
 		+work('one-more','one more trip 玩默官方網站','Responsive Website, Brand Identity').bn-om
