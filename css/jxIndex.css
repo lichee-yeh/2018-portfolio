@@ -34,9 +34,9 @@
     background-color: black;
 }
 
-.text__first-bg,
-.text__second-bg {
-    @media screen and (max-width: 767px) {
+@media screen and (max-width: 767px) {
+    .text__first-bg,
+    .text__second-bg {
         display: none;
     }
 }
