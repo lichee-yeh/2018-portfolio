@@ -6,7 +6,7 @@
         width: 338px;
         margin: -5vh auto 10vh;
         @include m-767 {
-            margin: 5vh auto 8vh;
+            margin: 0vh auto 8vh;
         }
         @media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
             margin: -2vh auto 8vh;
@@ -22,7 +22,7 @@
     .bn,
     .yt {
         @include m-767 {
-            width: 74%;
+            width: 100%;
         }
     }
 }
