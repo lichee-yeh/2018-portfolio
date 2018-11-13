@@ -1,0 +1,77 @@
+extends ./include/layout
+include ./include/mixin
+block own_style
+	link(rel = 'stylesheet', href = 'css/index.css')
+	link(rel = 'stylesheet', href = 'css/jxIndex.css')
+	script(src = './js/Index.min.js')
+block nav-index
+block content
+	+scroll
+	section.kv
+		main.abs
+			h1 
+				span.text__first
+					span.text__word
+						| hey, 
+					span.text__first-bg
+				br
+				span.text__second
+					span.text__word
+						| Lichee
+					span.text__word
+						|  is here.
+					span.text__second-bg
+
+				//- span.break hey,
+				//- span.break Lichee 
+				//- 	span.break-m is here.
+			p(style={opacity:0}) designer / freelancer / hualiener
+
+		.contact.animated.fadeInUp(style={display:'none'})
+			p +886-928-135-451
+			a(href="mailto:yehcyamm@gmail.com").mail yehcyamm@gmail.com
+	section.work
+		h2.tt.wow.fadeInUp 
+			span work
+		.project.onemore.wow.fadeInUp 
+			.device
+				+png('onemore')
+			.info
+				ul
+					li.work-tt one more trip
+					li.type Responsive Website , 
+						span.break-m.break-pad UI/UX Design, Brand Identity
+					li
+						a(href="project-one-more.html").btn-black case study
+		.project.coke.wow.fadeInUp 
+			.info
+				ul
+					li.work-tt 
+						span.break Coca-Cola
+						span.break 食尚餐廚集點送
+					li.type Mobile First, UI/UX Design
+					li
+						a(href="project-coke.html").btn-black case study
+			.device
+				+png('coke')
+		.project.sprite.wow.fadeInUp 
+			.device
+				+png('sprite-cool')
+			.info
+				ul
+					li.work-tt 
+						span.break Sprite
+						span.break Cool 玩瓶 BE YOU 
+							span.break-m.break-pad  激發最酷的你
+					li.type Responsive Website, UI/UX design
+					li
+						a(href="project-sprite-cool.html").btn-black case study
+		.moreBox.por.wow.fadeInUp 
+			span.arrowDown
+			a(href="work.html").btn-more see more work
+		.contact.outer-contact.wow.fadeInUp(data-wow-offset="50" data-wow-duration="1.5s")
+			p say hello?
+			.box
+				p +886-928-135-451
+				a(href="mailto:yehcyamm@gmail.com").mail yehcyamm@gmail.com
+block footer
