@@ -176,11 +176,11 @@ h6 {
   text-justify: inter-ideographic; }
 
 .mail,
-.tel, .btn-black, .close, .close:after, header nav.pc a:after {
+.tel, .btn-black, .close, .close:after, header .pc a:after {
   -webkit-transition: all .3s ease;
   transition: all .3s ease; }
 
-.scroll, header nav.pc a {
+.scroll, header .pc a {
   -webkit-writing-mode: vertical-rl;
   -ms-writing-mode: tb-rl;
   writing-mode: vertical-rl; }
@@ -1040,9 +1040,9 @@ header {
       right: 5%;
       left: inherit; } }
   @media screen and (max-width: 767px) {
-    header nav.pc {
+    header .pc {
       display: none; } }
-  header nav.pc a {
+  header .pc a {
     color: #000;
     font-size: 18px;
     font-size: 1.8rem;
@@ -1051,13 +1051,13 @@ header {
     letter-spacing: 1px;
     position: relative; }
     @media screen and (max-width: 1440px) {
-      header nav.pc a {
+      header .pc a {
         font-size: 1.6rem;
         margin-bottom: 30px; } }
     @media screen and (max-width: 1366px) {
-      header nav.pc a {
+      header .pc a {
         margin-bottom: 25px; } }
-    header nav.pc a:after {
+    header .pc a:after {
       content: '';
       width: 4px;
       height: 0;
@@ -1066,7 +1066,7 @@ header {
       position: absolute;
       left: -6px;
       bottom: 0; }
-    header nav.pc a:hover:after, header nav.pc a.active:after {
+    header .pc a:hover:after, header .pc a.active:after {
       height: 100%;
       bottom: inherit;
       top: 0; }

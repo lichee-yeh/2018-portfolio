@@ -15,7 +15,7 @@ header {
         right: 5%;
         left: inherit;
     }
-    nav.pc {
+    .pc {
         @include m-767 {
             display: none;
         }
